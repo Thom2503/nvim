@@ -2,7 +2,7 @@ vim.api.nvim_set_keymap("n", "<leader>l", ":set list!<CR>", { silent = true })
 
 vim.api.nvim_set_keymap("n", "<leader>h", ":nohl<CR>", { silent = true })
 
-vim.api.nvim_set_keymap("n", "<C-p>", ":Explore<CR>", { silent = true })
+-- vim.api.nvim_set_keymap("n", "<C-p>", ":Explore<CR>", { silent = true })
 
 vim.api.nvim_set_keymap("n", "<leader>tt", ":below vertical terminal<CR>", { silent = true })
 
@@ -37,6 +37,6 @@ vim.api.nvim_set_keymap("n", "<leader>0", "0gt", { noremap = true })
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<C-f>', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
